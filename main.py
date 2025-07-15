@@ -6,7 +6,7 @@ import streamlit as st
 st.header( "LangChain Documentation Helper")
 
 
-prompt = st.text_input("Prompt", placeholder="Enter your prompt here")
+prompt = st.text_input("Question", placeholder="Enter your question here")
 
 if (
     "chat_answers_history" not in st.session_state

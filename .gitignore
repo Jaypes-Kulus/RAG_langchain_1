@@ -163,3 +163,4 @@ cython_debug/
 __MACOSX
 Pipfile
 Pipfile.lock
+langchain-docs

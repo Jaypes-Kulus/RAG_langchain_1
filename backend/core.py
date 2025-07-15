@@ -12,7 +12,7 @@ from langchain.chains.history_aware_retriever import create_history_aware_retrie
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 
 
-INDEX_NAME = "langchain-doc-index"
+INDEX_NAME = "index_name" # Insert your index name here
 
 def run_llm(query:str, chat_history:List[Dict[str,Any]] = []):
     embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
@@ -47,9 +47,10 @@ def run_llm(query:str, chat_history:List[Dict[str,Any]] = []):
     }
     return detailed_result
 
-if __name__ == "__main__":
-    res = run_llm(query = "What is LangChain?")
-    print(f" query is {res['query']}")
-    print(f" result is {res['result']}")
-    print(f" source documents is {res['source_documents']}")
+#Testing
+# if __name__ == "__main__":
+#     res = run_llm(query = "What is this documebt about?")
+#     print(f" query is {res['query']}")
+#     print(f" result is {res['result']}")
+#     print(f" source documents is {res['source_documents']}")
 
