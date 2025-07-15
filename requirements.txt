@@ -1,0 +1,5 @@
+typing-extensions
+streamlit
+python-dotenv
+langchain
+langchain-pinecone

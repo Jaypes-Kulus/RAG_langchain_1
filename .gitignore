@@ -164,3 +164,4 @@ __MACOSX
 Pipfile
 Pipfile.lock
 langchain-docs
+docs-source/
